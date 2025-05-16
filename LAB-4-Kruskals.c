@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int comparator(const int p1[], const int p2[])
+int comparator(const void *p1, const void *p2)
 {
-    return p1[2] - p2[2];
+    return ((int(*)[3])p1)[2] - ((int(*)[3])p2)[2];
 }
+
 void makeSet(int parent[], int rank[], int n)
 {
     for (int i = 0; i < n; i++) {
@@ -12,13 +13,14 @@ void makeSet(int parent[], int rank[], int n)
         rank[i] = 0;
     }
 }
+
 int findParent(int parent[], int component)
 {
     if (parent[component] == component)
         return component;
-    return parent[component]
-           = findParent(parent, parent[component]);
+    return parent[component] = findParent(parent, parent[component]);
 }
+
 void unionSet(int u, int v, int parent[], int rank[], int n)
 {
     u = findParent(parent, u);
@@ -34,6 +36,7 @@ void unionSet(int u, int v, int parent[], int rank[], int n)
         rank[u]++;
     }
 }
+
 int kruskalAlgo(int n, int edge[n][3])
 {
     qsort(edge, n, sizeof(edge[0]), comparator);
@@ -52,6 +55,7 @@ int kruskalAlgo(int n, int edge[n][3])
     }
     return minCost;
 }
+
 int main()
 {
     int edge[5][3] = { { 0, 1, 10 },
@@ -59,6 +63,6 @@ int main()
                        { 0, 3, 5 },
                        { 1, 3, 15 },
                        { 2, 3, 4 } };
-    printf("%d",kruskalAlgo(5, edge));
+    printf("%d", kruskalAlgo(5, edge));
     return 0;
 }
