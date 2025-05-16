@@ -1,0 +1,91 @@
+LAB-1 Bubble Sort Output:
+
+Original array: 64 25 12 22 11 
+Sorted array: 11 12 22 25 64 
+Time taken: 0.000001 seconds
+
+#################################################
+LAB-1 Selection Sort Output :
+
+Original array: 60 25 14 26 11 
+Sorted array: 11 14 25 26 60 
+Time taken: 0.000002 seconds
+
+#################################################
+LAB-2 Brute Force Output :
+
+Enter the text: What are you doing ?
+Enter the pattern to search: are
+Pattern found at index 5
+
+#################################################
+LAB-3 Merge Sort Output :
+
+Original array: 38 27 43 3 9 82 10 
+Sorted array: 3 9 10 27 38 43 82
+
+#################################################
+LAB-3 Quick Sort Output :
+
+Original array: 10 7 8 9 1 5 
+Sorted array: 1 5 7 8 9 10 
+
+#################################################
+LAB-4 Kruskal's Algorithm Output :
+
+21
+
+#################################################
+LAB-4 Prim's Algorithm Output :
+
+Edge 	Weight
+0 - 1 	2 
+1 - 2 	3 
+0 - 3 	6 
+1 - 4 	5 
+
+#################################################
+LAB-5 Insertion Sort Output :
+
+Original array: 12 11 13 5 6 
+Sorted array: 5 6 11 12 13 
+
+#################################################
+LAB-6 Topological Sort Output :
+
+Enter number of vertices and edges: 6 6
+Enter edges (u v): 
+5 2
+5 0
+4 0
+4 1
+2 3
+3 1
+5 4 2 3 1 0 
+
+#################################################
+LAB-7 Heap Sort Output :
+
+Sorted array is 
+2 3 4 5 8 9 10 
+
+#################################################
+LAB-8 Floyd's Algorithm Output :
+
+0 3 7 5 
+2 0 6 4 
+3 1 0 5 
+5 3 2 0 
+
+#################################################
+LAB-9 N Queens using Backtracking Output :
+
+Solution: 
+2 4 1 3 
+
+#################################################
+LAB-10 Travelling Salesman Problem Output :
+
+Minimum tour cost: 80
+
+#################################################
